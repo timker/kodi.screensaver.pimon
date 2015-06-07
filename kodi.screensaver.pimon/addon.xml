@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="kodi.screensaver.pimon" name="pimon" version="0.1.4" provider-name="Tim Ker">
+<addon id="kodi.screensaver.pimon" name="pimon" version="0.2.1" provider-name="Tim Ker">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
     </requires>
@@ -9,9 +9,9 @@
         <language/>
         <website></website>
         <source>https://github.com/timker/kodi.screensaver.pimon</source>
-        <forum>http://forum.kodi.tv/showthread.php?tid=163016&pid=1995838#pid1995838</forum>
+        <forum>http://forum.kodi.tv/showthread.php?tid=163016&amp;pid=1995838#pid1995838</forum>
         <email></email>
         <summary lang="en"></summary>
-        <description lang="en"></description>
+        <description>Toggles Hdmi on pi devices</description>
     </extension>
 </addon>

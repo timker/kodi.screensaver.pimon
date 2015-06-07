@@ -1,2 +1,4 @@
+0.2.1 (7.6.2015)
+ - added support for more pi distributions 
 0.1.0 (3.5.2015)
  - ripped of the nyan cat screensaver

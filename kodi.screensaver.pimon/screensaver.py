@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 #
-#     Copyright (C) 2013 Tristan Fischer (sphere@dersphere.de)
+#     Copyright (C) 2015 Tim Ker
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -22,12 +22,19 @@ import xbmcgui
 import xbmc
 import sys
 import subprocess
+import os
 
 addon = xbmcaddon.Addon()
 addon_name = addon.getAddonInfo('name')
 addon_path = addon.getAddonInfo('path')
 
 
+def ensurePath():
+	 binPath = '/opt/vc/bin'
+	 paths = os.environ["PATH"].split(os.pathsep)
+	 if binPath not in paths:
+		 os.environ["PATH"] += os.pathsep + binPath     
+     
 class Screensaver(xbmcgui.WindowXMLDialog):
 
     class ExitMonitor(xbmc.Monitor):
@@ -40,6 +47,7 @@ class Screensaver(xbmcgui.WindowXMLDialog):
 
     def onInit(self):
         self.log('onInit')
+        ensurePath()
         subprocess.call('vcgencmd display_power 0', shell=True)
         self.exit_monitor = self.ExitMonitor(self.exit)
 
@@ -51,7 +59,7 @@ class Screensaver(xbmcgui.WindowXMLDialog):
         self.close()
 
     def log(self, msg):
-        xbmc.log(u'tims hdmi screensaver: %s' % msg)
+        xbmc.log(u'pimon hdmi screensaver: %s' % msg)
 
 
 if __name__ == '__main__':

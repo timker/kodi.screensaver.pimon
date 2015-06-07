@@ -2,7 +2,10 @@
 
 Build
 
-Make sure build.sh and addon.xml version numbers Match 
-do not finish the vesion number with a .0
+Make sure build.sh and addon.xml version numbers Match
 
-run sh build.sh
+Do not finish the vesion number with a .0
+
+run:
+
+sh build.sh

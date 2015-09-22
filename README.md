@@ -3,9 +3,8 @@
 
 ##Install
 
-Download the latest zip file from
-https://github.com/timker/kodi.screensaver.pimon/releases/tag/0.21
-
+Download the latest zip file from:
+https://github.com/timker/kodi.screensaver.pimon/releases/download/0.21/kodi.screensaver.pimon-0.2.1.zip
 
 use kodi to install from zip
 

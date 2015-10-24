@@ -2,9 +2,12 @@
 <addon id="kodi.screensaver.pimon" name="pimon" version="0.2.1" provider-name="Tim Ker">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="xbmc.addon"  version="12.0.0"/>
     </requires>
     <extension point="xbmc.ui.screensaver" library="screensaver.py" />
+    <extension point="xbmc.python.script" library="screensaver.py" />
     <extension point="xbmc.addon.metadata">
+        <provides>executable</provides>
         <platform>all</platform>
         <language/>
         <website></website>
@@ -13,5 +16,6 @@
         <email></email>
         <summary lang="en"></summary>
         <description>Toggles Hdmi on pi devices</description>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
     </extension>
 </addon>

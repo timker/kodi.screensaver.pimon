@@ -4,17 +4,25 @@
 ##Install
 
 Download the latest zip file from:
-https://github.com/timker/kodi.screensaver.pimon/releases/download/0.3.1/kodi.screensaver.pimon-0.3.1.zip
+https://github.com/timker/kodi.screensaver.pimon/releases/download/0.3.2/kodi.screensaver.pimon-0.3.1.zip
 
 use kodi to install from zip
 
+
+
 ##Build
 
-Make sure build.sh and addon.xml version numbers Match
+Create Zip file kodi.screensaver.pimon-X.X.X with folder kodi.screensaver.pimon inside
 
-Do not finish the vesion number with a .0
-
-run:
+i.e
 ```
-sh build.sh
+kodi.screensaver.pimon-0.3.1.zip
+|-kodi.screensaver.pimon
+       |-addon.xml
+       |-etc
 ```
+ 
+ - addon.xml verion number must increase
+ - zip file name must match version number
+ - folder kodi.screensaver.pimon must exist in zip 
+  
